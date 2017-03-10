@@ -1,0 +1,16 @@
+.pagination {
+  margin-top: 3em;
+
+  text-align: center;
+
+  font-family: $font__headline;
+  font-weight: $font__headline--medium;
+}
+
+[class^="pagination__link"],
+[class*=" pagination__link"] {
+  font-size: 1.5em;
+  @include small-caps;
+
+  @include link--primary;
+}

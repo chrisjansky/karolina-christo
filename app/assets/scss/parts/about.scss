@@ -1,0 +1,11 @@
+.about__portrait {
+  float: right;
+  width: 20em;
+
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+.about__text {
+  @include reset-children;
+}

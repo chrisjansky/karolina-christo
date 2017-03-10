@@ -1,0 +1,45 @@
+.footer {
+  padding: 2em;
+
+  text-align: center;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    flex-basis: 12em;
+
+    margin: 1.5em 3em;
+  }
+}
+
+.item {
+  &--zn {
+    flex-basis: 8em;
+  }
+  &--penzion_na_skole {
+    flex-basis: 20em;
+  }
+  &--labotella {
+    flex-basis: 14em;
+  }
+  &--tic {
+    flex-basis: 20em;
+  }
+  &--hosp_komora {
+    flex-basis: 16em;
+  }
+  &--vincentka {
+    flex-basis: 10em;
+  }
+  &--sobieski {
+    flex-basis: 6em;
+  }
+}

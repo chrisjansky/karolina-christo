@@ -1,0 +1,15 @@
+.kirby-text {
+  h1 {
+    @extend .title--c;
+  }
+
+  h2 {
+    @extend .title--b;
+  }
+}
+
+.kirby-contact {
+  ul {
+    @extend .contact__list;
+  }
+}

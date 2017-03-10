@@ -1,0 +1,14 @@
+.contact {
+  &__map {
+    float: right;
+    margin-left: 2em;
+  }
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  a {
+    border-bottom: 1px solid;
+  }
+}

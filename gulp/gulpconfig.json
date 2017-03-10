@@ -1,0 +1,56 @@
+{
+  "path": "./gulp/gulpconfig.json",
+  "dev": {
+    "root": "app/",
+
+    "pagesFormat": ".html",
+    "pagesPartial": "assets/html",
+    "pagesRoot": "app/assets/html",
+    "pagesGlob": "app/assets/html/**/*.html",
+    "pagesFilter": "**/[^_]*.html",
+
+    "templatesRoot": "app/assets/pug/",
+    "templatesGlob": "app/assets/pug/**/*.pug",
+
+    "jsonGlobal": "app/assets/pug/_data/global.json",
+
+    "stylesRoot": "app/assets/scss/",
+    "stylesBase": "app/assets/scss/*.scss",
+    "stylesGlob": "app/assets/scss/**/*.scss",
+
+    "tempRoot": "app/assets/temp/",
+
+    "imagesGlob": "app/assets/images/**/*",
+    "imagesIgnore": "!app/assets/images/_ignore{,/**}",
+
+    "svgSourceGlob": "app/assets/svg/_source/*.svg",
+    "svgBuildGlob": "app/assets/svg/*.svg",
+    "svgBuild": "app/assets/svg/",
+
+    "jsGlob": "app/assets/js/**/*.js"
+  },
+  "dist": {
+    "root": "dist/"
+  },
+  "move": [
+    "app/*.html",
+    "app/images/**/*"
+  ],
+  "assets": {
+    "dev": [
+      "node_modules/normalize.css/normalize.css",
+      "node_modules/featherlight/src/featherlight.css",
+      "node_modules/featherlight/src/featherlight.gallery.css",
+      
+      "app/assets/temp/style.css",
+
+      "node_modules/featherlight/src/featherlight.js",
+      "node_modules/featherlight/src/featherlight.gallery.js",
+      "app/assets/js/script.js"
+    ],
+    "dist": [
+      "dist/assets/css/style-min.css",
+      "dist/assets/js/site-min.js"
+    ]
+  }
+}

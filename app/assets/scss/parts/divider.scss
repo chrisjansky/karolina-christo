@@ -1,0 +1,16 @@
+.divider {
+  color: $c-primary--300;
+  background-color: white;
+}
+
+.divider__wrap {
+  @include a-wrap;
+  padding-top: .75em;
+  padding-bottom: 1.25em;
+}
+
+.divider__title {
+  display: inline;
+
+  border-bottom: 2px solid;
+}

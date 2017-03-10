@@ -1,0 +1,36 @@
+.detail {
+  &__title {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  &__intro {
+    margin: 3em -2em;
+  }
+
+  &__hero {
+    max-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    text-align: center;
+
+    h1,
+    h2,
+    h3,
+    ul,
+    p {
+      text-align: left;
+    }
+
+    figure {
+      display: inline-block;
+      margin: 1em;
+
+      max-width: calc(50% - 2.25em);
+      max-height: 100vh;
+    }
+  }
+}

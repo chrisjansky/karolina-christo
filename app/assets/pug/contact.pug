@@ -1,0 +1,23 @@
+extends _templates/_site
+
+block template-body
+  +header("contact")
+
+  main.content
+    .content__wrap
+      .contact
+        .contact__map
+          include _vendor/_google-maps.html
+        ul.contact__list
+          li JUDr. Bronislava Orbesová <br>(pro oblast kreatitivy pod jménem Karolína Christo)
+          li sídlo: "BYT KAROLÍNY CHRISTO"
+          li adresa: Štefánikova 5462, 760 01 Zlín
+          li tel: +420 577 213 319
+          li mobil: 602 716 621
+          li
+            | e-mail: 
+            include _vendor/_enkoder.html
+          li spřízněné: #[a(href="http://www.akorbesova.cz" target="_blank") www.akorbesova.cz]
+        p Mužete nás také sledovat na #[a(href="https://www.facebook.com/KarolinaChristo/" target="_blank") Facebooku] a #[a(href="https://www.instagram.com/karolina.christo/" target="_blank") Instagramu].
+
+  include _mixins/_footer

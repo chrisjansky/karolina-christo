@@ -1,0 +1,29 @@
+mixin header(slug)
+  header.header
+    a.header__logo(href="index.html")
+      include ../../svg/logo-karolina.svg
+
+    nav.nav
+      ul.nav__list
+        -
+          var pages = [
+            {
+              "slug": "index",
+              "title": "Karolína"
+            },
+            {
+              "slug": "blog",
+              "title": "Blog &amp; Aktuality"
+            },
+            {
+              "slug": "gallery",
+              "title": "Fotogalerie"
+            },
+            {
+              "slug": "contact",
+              "title": "Kontakt"
+            }
+          ]
+        each instance in pages
+          li(class=slug == instance.slug ? "nav__item--active" : "nav__item")
+            a.nav__link(href=instance.slug + ".html")!= instance.title

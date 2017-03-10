@@ -1,0 +1,86 @@
+.featherlight {
+
+  &:last-of-type {
+    background: rgba($c-primary--500, .9);
+  }
+
+  .featherlight-content {
+    border: 0;
+    padding: 0;
+
+    max-height: calc(100% - 4em);
+
+    overflow: visible;
+    
+    background: transparent;
+  }
+
+  .featherlight-close-icon {
+    position: fixed;
+    width: 1em;
+    height: auto;
+
+    box-sizing: content-box;
+
+    top: 0;
+    right: 0;
+
+    font-size: 1.5em;
+    line-height: 1;
+
+    padding: .75em;
+
+    color: $c-primary--300;
+    background-color: transparent;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+/*
+Featherlight Gallery
+*/
+.featherlight-previous,
+.featherlight-next {
+  top: 0;
+  bottom: 0;
+
+  padding: 2.5em;
+
+  span {
+    display: block;
+
+    top: 50%;
+    left: 50%;
+    right: auto;
+
+    transform: translate(-50%, -50%);
+
+    width: auto;
+    height: auto;
+    margin-top: 0;
+
+    color: $c-primary--300;
+    font-size: 2em;
+    line-height: 1;
+    text-shadow: none;
+
+    border-radius: 50%;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.featherlight-previous {
+  left: -6em;
+  right: auto;
+}
+
+.featherlight-next {
+  right: -6em;
+  left: auto;
+}

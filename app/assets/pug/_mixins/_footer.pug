@@ -1,0 +1,12 @@
+footer.footer
+  h1.title--c Mediální partneři
+  .footer__list
+    each instance in ["studentpoint", "zn"]
+      li.footer__item(class="item--" + instance)
+        img.footer__logo(src="/assets/images/partners/" + instance + ".png", alt="Logo mediálního partnera")
+
+  h1.title--c Partneři
+  .footer__list
+    each instance in ["penzion_na_skole", "zkk", "los_kachlos", "labotella", "spx_car", "tic", "hosp_komora", "jiri_vinter", "vincentka", "sobieski"]
+      li.footer__item(class="item--" + instance)
+        img.footer__logo(src="/assets/images/partners/" + instance + ".png", alt="Logo  partnera")

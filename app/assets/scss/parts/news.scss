@@ -1,0 +1,17 @@
+.news {
+  &__item {
+    @include clearfix;
+  }
+
+  &__image {
+    float: right;
+
+    width: 16em;
+    margin-left: 2em;
+  }
+
+  &__link {
+    @include link--primary;
+    font-style: italic;
+  }
+}

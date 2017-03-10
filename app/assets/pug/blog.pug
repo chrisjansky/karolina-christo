@@ -1,0 +1,19 @@
+extends _templates/_site
+
+block template-body
+  +header("blog")
+
+  main.content
+    .content__wrap
+      .news
+        .news__item
+          a(href="blog-post.html")
+            img.news__image(src="/assets/images/blog/blog_2.jpg" alt="Blog Post Preview")
+          .news__content
+            a.news__title(href="blog-post.html")
+              h1.title--b Zrody
+            p
+              | Na světě každý rok vznikají stovky, tisíce a snad i miliony projektů. Ať už pouze v lidských hlavách nebo na papíře. Jen málo z nich se ale opravdu promění v realitu. Jejich zhmotnění se často přirovnává k narození. Vše počne v naší hlavě a před tím, než se nám podaří toto pomyslné dítě ukázat světu, předchází tomu (v tomto případě) i několik měsíců těžké práce. Zatajujeme dech a doufáme, že výsledek předčí naše očekávání a my nakonec 
+              a.news__link(href="blog-post.html") &hellip; Více
+
+  include _mixins/_footer

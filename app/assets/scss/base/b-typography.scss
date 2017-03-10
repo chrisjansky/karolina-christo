@@ -1,0 +1,42 @@
+@mixin link--primary {
+  &:link,
+  &:visited {
+    color: $c-primary--300;
+  }
+  &:hover,
+  &:active {
+    color: black;
+  }
+}
+
+@mixin small-caps {
+  font-variant: all-small-caps;
+  letter-spacing: .0625em;
+}
+
+.title--a {
+  font-family: $font__headline;
+  font-weight: $font__headline--medium;
+  
+  @include small-caps;
+}
+
+.title--b {
+  font-weight: $font__sans--semi;
+  
+  @include small-caps;
+}
+
+.title--c {
+  font-family: $font__headline;
+  font-weight: $font__headline--regular;
+  font-size: 2em;
+}
+
+.title--d {
+  font-family: $font__headline;
+  font-weight: $font__headline--medium;
+  font-size: 3em;
+  
+  @include small-caps;
+}

@@ -1,0 +1,22 @@
+extends _templates/_site
+
+block template-body
+  +header("gallery")
+
+  main.content
+    .content__wrap
+      p Karolína Christo trvale vystavuje své obrazy v Penzionu na Škole, Podkopná Lhota 91 u&nbsp;Zlína. Kromě toho jsou její obrazy vystaveny v dalších prostorách a&nbsp;galeriích. V těchto původně školních, dnes zásadně rekonstruovaných prostorách, budou probíhat kreativní i&nbsp;poradenské workshopy Karolíny.
+      p Karolína zde bude také hostit nejrůznější odborníky a&nbsp;to například z oblasti ekonomie, práva, rozvoje osobnosti, manažerských dovedností, marketingu, kreativity, zdravého životního stylu, zlepšení schopnosti veřejně vystupovat, slovního projevu, divadelního projevu, nalezení vhodného stylu vlastního oblékání a&nbsp;vyjádření sebe sama apod.
+      p O aktuálně připravovaných akcích Vás budeme průběžně informovat.
+      h1.title--c Motto: Učme se nalézat svoji jedinečnost!
+      p Vaše Karolína Christo
+
+    section.gallery(data-featherlight-gallery, data-featherlight-filter="[data-gallery]")
+      - var photoCount = 25
+      - var photoIndex = 1
+      while photoIndex <= photoCount
+        a.gallery__item(href="/assets/images/gallery-full/gallery_" + photoIndex + ".jpg", data-gallery)
+          img.gallery__image(src="/assets/images/gallery-thumbnails/gallery_" + photoIndex + ".jpg" alt="Gallery Photo")
+        - photoIndex++
+
+  include _mixins/_footer

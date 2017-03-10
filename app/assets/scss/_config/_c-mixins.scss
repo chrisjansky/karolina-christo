@@ -1,0 +1,29 @@
+/*----- Helper mixins ----- */
+
+@mixin reset-children {
+  & > :first-child {
+    margin-top: 0;
+  }
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin pseudo-center {
+  &:before {
+    content: "";
+    width: 0;
+    height: 100%;
+
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}

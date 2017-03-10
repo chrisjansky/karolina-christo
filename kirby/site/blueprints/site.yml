@@ -1,0 +1,16 @@
+title: Site
+
+pages: default
+
+fields:
+  title:
+    label:
+      en: Title
+      cs: Název
+    type: text
+
+  description:
+    label:
+      en: Description
+      cs: Popis
+    type: textarea

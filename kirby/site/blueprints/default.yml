@@ -1,0 +1,12 @@
+title: Page
+
+fields:
+  title:
+    label:
+      en: Title
+      cs: Název
+    type:  text
+
+  text:
+    label: Text
+    type:  textarea

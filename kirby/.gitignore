@@ -1,0 +1,10 @@
+.gitkeep
+/*.php
+/*.md
+
+assets/
+kirby/
+panel/
+
+site/accounts/
+site/cache/

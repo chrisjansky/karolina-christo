@@ -1,0 +1,30 @@
+title:
+  en: Article
+  cs: Článek
+
+pages: false
+
+fields:
+  title:
+    label:
+      en: Title
+      cs: Nadpis
+    type: title
+
+  thumbnail:
+    label:
+      en: Thumbnail
+      cs: Náhledová fotka
+    type: image
+    width: 1/2
+
+  cover:
+    label:
+      en: Cover Image
+      cs: Úvodní fotka
+    type: image
+    width: 1/2
+
+  text:
+    label: Text
+    type: textarea

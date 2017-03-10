@@ -1,0 +1,29 @@
+title: Home
+
+options:
+  delete: false
+
+fields:
+  title:
+    label:
+      en: Title
+      cs: Název
+    type: text
+
+  about:
+    label:
+      en: about
+      cs: Úvod
+    type: textarea
+
+  project:
+    label:
+      en: project
+      cs: O projektu
+    type: textarea
+
+  consulting:
+    label:
+      en: Consulting
+      cs: Poradenství
+    type: textarea

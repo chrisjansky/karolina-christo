@@ -1,0 +1,13 @@
+title: Blog
+
+files: false
+
+pages:
+  template: article
+  sort: flip
+
+options:
+  status: false
+  url: false
+
+icon: newspaper-o

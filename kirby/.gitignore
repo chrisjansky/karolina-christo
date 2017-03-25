@@ -5,7 +5,11 @@
 assets/
 kirby/
 panel/
+thumbs/
 
 site/accounts/
 site/cache/
 site/config/
+site/fields/
+
+content/**/*.jpg

@@ -3,7 +3,10 @@
 
 <main class="content longform">
   <div class="content__wrap">
-    <div class="about"><img class="about__portrait" src="/assets/images/portrait.jpg" alt="Portrét Karolíny Christo">
+    <div class="about">
+      <?php if($page->portrait()->isNotEmpty()): ?>
+        <img class="about__portrait" src="<?= $page->portrait()->toFile()->url() ?>" alt="Portrét Karolíny Christo" />
+      <?php endif ?>
       <div class="about__text">
         <?= $page->about()->kirbytext() ?>
       </div>

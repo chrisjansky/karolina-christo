@@ -1,7 +1,10 @@
 title: Home
 
+pages: false
+
 options:
   delete: false
+  status: false
 
 fields:
   title:
@@ -9,6 +12,14 @@ fields:
       en: Title
       cs: Název
     type: text
+    width: 1/2
+
+  portrait:
+    label:
+      en: Portrait
+      cs: Portrét
+    type: image
+    width: 1/2
 
   about:
     label:

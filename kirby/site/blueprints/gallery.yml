@@ -1,0 +1,25 @@
+title: Page
+
+pages: false
+
+options:
+  delete: false
+  status: false
+
+fields:
+  title:
+    label:
+      en: Title
+      cs: Název
+    type:  text
+    width: 1/2
+
+  text:
+    label: Text
+    type:  textarea
+
+  pictures:
+    label:
+      en: Gallery
+      cs: Fotogalerie
+    type: gallery

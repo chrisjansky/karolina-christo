@@ -15,8 +15,9 @@ block template-body
       - var photoCount = 25
       - var photoIndex = 1
       while photoIndex <= photoCount
-        a.gallery__item(href="/assets/images/gallery-full/gallery_" + photoIndex + ".jpg", data-gallery)
-          img.gallery__image(src="/assets/images/gallery-thumbnails/gallery_" + photoIndex + ".jpg" alt="Gallery Photo")
+        - var photoFileNumber = photoIndex < 10 ? "0" + photoIndex : photoIndex
+        a.gallery__item(href="/assets/images/gallery-full/gallery_" + photoFileNumber + ".jpg", data-gallery)
+          img.gallery__image(src="/assets/images/gallery-thumbnails/gallery_" + photoFileNumber + ".jpg" alt="Gallery Photo")
         - photoIndex++
 
   include _mixins/_footer
